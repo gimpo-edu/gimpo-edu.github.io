@@ -62,14 +62,19 @@ header .heading {
   margin-bottom: 0.2em;
 }
 
+header .heading a {
+  text-decoration: none;
+  color: #fffef1;
+}
+
 header .nav {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-flow: row;
   justify-content: center;
   width: 100%;
   margin-top: 11px;
-  position: absolute;
-  bottom: 0;
 }
 
 header .nav .item {
@@ -139,3 +144,4 @@ article .notebox {
   width: 100%;
   height: 100%;
 }
+
