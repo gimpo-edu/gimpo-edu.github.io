@@ -1,0 +1,133 @@
+$font_basic: "Noto Sans KR", "Noto Sans", "Malgul Gothic", sans-serif;
+$upper_space: 108px;
+$color_p1: #655b8d;
+$color_p2: #b4afcb;
+$color_p3: #f5d1d3;
+$color_txt_1_light: #fffef1;
+
+html, body, ul, ol, li, a, div, img, span, nav, article,
+h1, h2, h3, h4, h5, h6, dd, dt, dl {
+	margin:0;
+	padding:0;
+}
+div.image {
+	text-align: center;
+}
+#eventImage {
+	margin: 40px 0;
+}
+img {
+	max-width: 100%;
+	max-height: auto;
+	&.mw {
+		max-width: 90%;
+	}
+}
+h1, h2, h3, h4, h5, h6, body, div {
+	font-family: $font_basic;
+}
+
+#wrapper {
+	max-width: 750px;
+	margin: 0px;
+	padding: 0;
+	width: 100%;
+}
+
+header .heading {
+	text-align: center;
+}
+
+.dummy-header {
+	margin:0;
+	padding:0;
+	height: $upper_space;
+	background-color: $color_p3;
+}
+
+
+header {
+	width: 100%;
+	height: $upper_space;
+	padding: 10px 0 0 0;
+	position: fixed;
+	left:0px;
+	top:0px;
+	z-index:999;
+	background-color: $color_p1;
+
+	.heading {
+		font-family: $font_basic;
+		font-size: 24px;
+		padding-top: 16px;
+		color: $color_txt_1_light;
+		margin-bottom: 0.2em;
+		}
+	.nav {
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		width: 100%;
+		margin-top: 11px;
+		.item {
+			text-align: center;
+			flex-grow: 1;
+			padding: 8px 0;
+			background-color: $color_p1;
+			color: red;
+			margin-right: 1px;
+			a {
+				font-size: 18px;
+				text-align: center;
+				text-decoration: none;
+				color: #fff;
+			}
+			&.focus {
+				background-color:$color_p2;
+				a {
+					color: $color_p1;
+				}
+
+			}
+
+		}
+	}
+}
+
+article {
+	padding: 10em 0 auto 0;
+	margin: 0;
+	min-height: 800px;
+	width: 100%;
+	h1, h2, h3, h4 {
+		color: $color_p1;
+	}
+	&.ac01 {
+		background-color: $color_p3;
+	}
+	&.ac02 {
+		background-color: #fff;
+	}
+	h1, h2, h3 {
+		display: block;
+		padding: 1em 0 0.4em 1em;
+	}
+	.notebox {
+		margin: 1em;
+		padding: 1em;
+		border-radius: 8px;
+		border: 1px solid $color_p1;
+		background-color: #fff;
+		color: $color_p1;
+	}
+}
+
+.maps {
+	width:90%;
+	padding: 5%;
+	max-height: 500px;
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+}
