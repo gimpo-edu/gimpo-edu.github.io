@@ -68,6 +68,8 @@ header .nav {
   justify-content: center;
   width: 100%;
   margin-top: 11px;
+  position: absolute;
+  bottom: 0;
 }
 
 header .nav .item {
